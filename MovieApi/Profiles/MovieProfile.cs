@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MovieApi.Models;
 using MovieApi.Models.InputModel;
+using MovieApi.Models.ViewModel;
 
 namespace MovieApi.Profiles
 {
@@ -9,6 +10,7 @@ namespace MovieApi.Profiles
         public MovieProfile()
         {
             CreateMap<Movie, MovieInputModel>().ReverseMap();
+            CreateMap<Movie, MovieViewModel>().ReverseMap();
         }
     }
 }

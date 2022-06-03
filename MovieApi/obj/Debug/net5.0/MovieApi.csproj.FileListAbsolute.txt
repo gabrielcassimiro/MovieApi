@@ -44,11 +44,13 @@ D:\Projects\Backend\CSharp\MovieApi\MovieApi\obj\Debug\net5.0\MovieApi.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\obj\Debug\net5.0\MovieApi.pdb
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\obj\Debug\net5.0\MovieApi.genruntimeconfig.cache
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\obj\Debug\net5.0\ref\MovieApi.dll
-D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\ref\MovieApi.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\AutoMapper.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\Castle.Core.dll
+D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Projects\Backend\CSharp\MovieApi\MovieApi\bin\Debug\net5.0\ref\MovieApi.dll
 D:\Projects\Backend\CSharp\MovieApi\MovieApi\obj\Debug\net5.0\staticwebassets\MovieApi.StaticWebAssets.xml

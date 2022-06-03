@@ -23,7 +23,7 @@ namespace MovieApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MovieContext>(options =>
-                options.UseMySQL(Configuration.GetConnectionString("MovieConnection")));
+                options.UseLazyLoadingProxies().UseMySQL(Configuration.GetConnectionString("MovieConnection")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

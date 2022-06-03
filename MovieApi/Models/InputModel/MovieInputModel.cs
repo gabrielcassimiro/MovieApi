@@ -10,6 +10,8 @@ namespace MovieApi.Models.InputModel
         [Required(ErrorMessage = "The Title Description is required.")]
         public string Description { get; set; }
 
+        public virtual Director Director { get; set; }
+        
         public int DirectorId { get; set; }
 
         [Required(ErrorMessage = "The Title Genre is required.")]

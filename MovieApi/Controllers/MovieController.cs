@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using MovieApi.Data;
 using MovieApi.Models;
 using MovieApi.Models.InputModel;
+using MovieApi.Models.ViewModel;
 
 namespace MovieApi.Controllers
 {
@@ -22,13 +23,14 @@ namespace MovieApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IList<Movie>> GetMovies() => _context.Movies.ToList();
+        public ActionResult<IList<MovieViewModel>> GetMovies() =>
+            _mapper.Map<List<MovieViewModel>>(_context.Movies.ToList());
 
         [HttpGet("{id:int}")]
-        public ActionResult<Movie> GetMovie(int id)
+        public ActionResult<MovieViewModel> GetMovie(int id)
         {
             var response = _context.Movies.FirstOrDefault(movie => movie.Id == id);
-            return response != null ? Ok(response) : NotFound();
+            return response != null ? Ok(_mapper.Map<MovieViewModel>(response)) : NotFound();
         }
 
         [HttpPost]
@@ -37,7 +39,7 @@ namespace MovieApi.Controllers
             var value = _mapper.Map<Movie>(movie);
             _context.Movies.Add(value);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(GetMovie), new {Id = value.Id}, value);
+            return CreatedAtAction(nameof(GetMovie), new { Id = value.Id }, value);
         }
 
         [HttpPut("{id:int}")]

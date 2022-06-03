@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace MovieApi.Models
 {
@@ -13,6 +14,9 @@ namespace MovieApi.Models
         [Required(ErrorMessage = "The Title Description is required.")]
         public string Description { get; set; }
 
+        [JsonIgnore]
+        public virtual Director Director { get; set; }
+        
         public int DirectorId { get; set; }
 
         [Required(ErrorMessage = "The Title Genre is required.")]

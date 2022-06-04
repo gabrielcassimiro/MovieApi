@@ -12,7 +12,7 @@ namespace MovieApi.Models.InputModel
 
         public virtual Director Director { get; set; }
         
-        public int DirectorId { get; set; }
+        public int? DirectorId { get; set; }
 
         [Required(ErrorMessage = "The Title Genre is required.")]
         public string Genre { get; set; }

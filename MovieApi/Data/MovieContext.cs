@@ -11,11 +11,13 @@ namespace MovieApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //To Create Foreing Key
+            //To Create Foreign Key
             modelBuilder.Entity<Movie>()
                 .HasOne(movie => movie.Director)
                 .WithMany(director => director.Movies)
-                .HasForeignKey(movie => movie.DirectorId);
+                .HasForeignKey(movie => movie.DirectorId)
+                .OnDelete(DeleteBehavior.Restrict)
+                .IsRequired(false);
         }
 
         public DbSet<Movie> Movies { get; set; }
